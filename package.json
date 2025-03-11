@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest src",
-    "stdout": "babel-node src/generate",
-    "build": "babel-node src/generate json",
+    "stdout": "bun src/generate",
+    "build": "bun src/generate json",
     "precommit": "lint-staged",
-    "prepublish": "npm run build",
+    "prepublish": "bun run build",
     "prettier": "prettier --single-quote --write \"src/**/*.{js,jsx}\""
   },
   "repository": {
